@@ -1,0 +1,96 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2e1a47, #3e2723);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator Container */
+.calculator {
+  background: linear-gradient(160deg, #1c1c1c, #2e1a47, #4e342e);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5),
+              0 0 40px rgba(92, 64, 51, 0.7);
+  width: 300px;
+}
+
+/* Display */
+.display {
+  background: linear-gradient(145deg, #2e1a47, #1c1c1c);
+  color: #fff;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: right;
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Buttons */
+button {
+  font-size: 1.2rem;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  background: linear-gradient(160deg, #3e2723, #2e1a47);
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover effect */
+button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(160deg, #5d4037, #673ab7);
+  box-shadow: 0 6px 14px rgba(138, 43, 226, 0.6);
+}
+
+/* Operator Buttons */
+button.operator {
+  background: linear-gradient(160deg, #4e342e, #7b1fa2);
+  color: #f8f8f8;
+}
+
+button.operator:hover {
+  background: linear-gradient(160deg, #6d4c41, #9c27b0);
+}
+
+/* Equal Button */
+button.equal {
+  grid-column: span 4;
+  background: linear-gradient(135deg, #8e24aa, #3e2723);
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+button.equal:hover {
+  background: linear-gradient(135deg, #ba68c8, #6d4c41);
+  transform: scale(1.05);
+}
+
+/* Clear Button */
+button.clear {
+  background: linear-gradient(135deg, #8b0000, #3e2723);
+  color: #fff;
+}
+
+button.clear:hover {
+  background: linear-gradient(135deg, #d32f2f, #5d4037);
+}
