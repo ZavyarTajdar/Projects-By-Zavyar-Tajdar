@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #000000, #2b165d);
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            color: #fff;
+            transition: transform 0.2s ease, background 0.3s ease;
+            display: inline-block;
+        }
+
+        .truth-btn {
+            background: #ff4b5c;
+        }
+
+        .dare-btn {
+            background: #28a745;
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Example demo pages for Truth/Dare */
+        .message {
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 20px;
+        }
+        .reset-btn{
+            background-color: #79c2b6;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎲 Truth or Dare 🎲</h1>
+
+        <div class="buttons">
+            <a href="#truth" class="truth-btn">Truth</a>
+            <a href="#dare" class="dare-btn">Dare</a>
+            <a href="#dare" class="reset-btn">Clear</a>
+
+        </div>
+
+        <div class="card">
+            <p>Select Truth or Dare to see a challenge.</p>
+        </div>
+    </div>
+</body>
+<script src="TOD.js"></script>
+
+</html>
