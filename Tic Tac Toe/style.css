@@ -1,0 +1,101 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif; /* gaming font */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Game Container */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+/* Game Boxes */
+.box {
+  width: 100px;
+  height: 100px;
+  background: #111;
+  border: 2px solid #00ffcc;
+  border-radius: 12px;
+  font-size: 2.5rem;
+  color: #00ffcc;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.6);
+}
+
+.box:hover {
+  background: #00ffcc;
+  color: #111;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+
+.box:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Winner / Draw Message */
+.winner {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  padding: 12px 25px;
+  background: #222;
+  border: 2px solid #ff0066;
+  border-radius: 8px;
+  color: #ff0066;
+  text-align: center;
+  text-shadow: 0 0 10px #ff0066;
+  animation: glow 1.5s infinite alternate;
+}
+
+.hide {
+  display: none;
+}
+
+/* Reset Button */
+.reset {
+  background: #ff0066;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff0066;
+}
+
+.reset:hover {
+  background: #ff3366;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066;
+}
+
+/* Glow Animation for Winner */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #ff0066;
+  }
+  to {
+    box-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066;
+  }
+}
