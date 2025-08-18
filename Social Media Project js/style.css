@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+.App-Name {
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: blueviolet;
+    background: #111;
+    border-bottom: 2px solid #333;
+    margin: auto;
+    
+}
+.name{
+    margin: auto;
+    transition: 0.7s;
+}
+.name:hover{
+    color: #a00c0c;
+    box-shadow:  0px 2px rgb(127, 33, 33);
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    flex-direction: column;
+    /* stack links vertically */
+    align-items: flex-start;
+    /* align them to the left */
+    background: #111;
+    padding: 10px 20px;
+    width: 200px;
+    /* sidebar width */
+    height: 100vh;
+    /* full page height */
+}
+
+nav a {
+    color: #792121;
+    text-decoration: none;
+    margin: 7px 0;
+    /* vertical spacing */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fd1010;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #111;
+    padding: 10px 20px;
+    width: 200px;
+    height: auto;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    /* vertical margin line */
+}
+.box{
+  width: 170px;
+  height: 25px;
+  background: #222;
+  color: white;
+  box-shadow: 4px 4px 10px rgba(224, 59, 59, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  position: sticky;
+  top: 12px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #1c1c1c;
+  padding: 12px 18px;
+  border-radius: 40px;
+  width: 40rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.search-bar:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.search-bar i {
+  color: #a00c0c;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  flex: 1;
+  font-size: 16px;
+}
+h1{
+    margin-right: 3rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.set-pro{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12px 40px 12px 10px;
+    padding: 14px 1rem 10px 6rem;
+    
+}
+.left{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0px 15px 0px 15px;
+}
+i{
+    margin-right: 12px;
+}
+.post {
+  width: 500px;
+  margin: 50px auto;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.Post-section{
+  width: 500px;
+  margin: 10px auto;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-header .profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #00aaff;
+}
+
+
+.post-image img {
+  width: 100%;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.post-actions i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.post-actions .save {
+  margin-left: auto;
+}
+
+.post-caption {
+  padding: 0 10px 10px;
+  font-size: 14px;
+}
+.profile-pic {
+  width: 40px;    
+  cursor: pointer;      /* size of the profile pic */
+  height: 40px;
+  border-radius: 50%;   /* makes it a circle */
+  object-fit:cover;    /* prevents stretching */
+  border: 2px solid #0077ff; /* thin border (blue theme) */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* soft shadow */
+}
+.username {
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff; /* white text if your theme is dark */
+} 
+.username:hover{
+  color: #a00c0c;
+}
+.verified-badge {
+  color: #1DA1F2;          /* Twitter/Instagram blue */
+  font-size: 16px;         /* size of check */
+  margin-left: 5px;        /* little space from username */
+  display: inline-block;
+  background-color: rgb(49, 22, 255); /* white circle behind */
+  border-radius: 50%;
+  padding: 1px 4px;
+  font-weight: bold;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between pic and name */
+  padding: 10px;
+}
+.first-portion{
+    display: flex;
+
+}
