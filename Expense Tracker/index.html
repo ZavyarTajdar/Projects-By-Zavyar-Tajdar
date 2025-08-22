@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header>
+
+  <section class="form-section card">
+    <h2>Add Expense</h2>
+    <form>
+      <input type="text" placeholder="Description" required>
+      <input type="number" placeholder="Amount" required>
+      <button type="submit" class="btnAdd">Add</button>
+    </form>
+      <button type="submit" class="btnclear">Clear</button>
+
+  </section>
+
+  <section class="card">
+    <h2>Transactions</h2>
+    <ul class="transactions-list ">
+      <li>Salary - $2000</li>
+    </ul>
+  </section>
+
+  <section class="summary-section card">
+    <h2>Summary</h2>
+    <p class="totalIncome">Total Income: $2000</p>
+    <p class="totalExpenses">Total Expenses: $0</p>
+    <p class="balance">Balance: $2000</p>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>

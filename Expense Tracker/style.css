@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #000000;
+  padding: 20px;
+  background-color: #333;
+  max-width: 600px;
+  margin: auto;
+}
+.card{
+    background:linear-gradient(45deg, rgb(33, 178, 161), rgb(97, 23, 137))
+}
+
+header {
+  text-align: center;
+  background-color: #766666;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+/* Form card */
+.form-section form {
+  flex-direction: column; /* stack inputs vertically */
+}
+
+input, button {
+  margin-bottom: 10px;
+}
+
+/* Card style for sections */
+section {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Summary card with different color */
+.summary-section {
+  background-color: #e3f2fd;
+}
+ul li:hover {
+  background-color: #1e5b97;
+  transition: 0.3s;
+}
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header {
+  border-bottom: 4px solid #007BFF;
+}
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    gap: 5px;
+  }
+
+  input, button {
+    padding: 8px;
+  }
+}
